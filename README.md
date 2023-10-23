@@ -23,7 +23,7 @@ First, locate to the folder where the audio source is. then, use the following p
 Prompt breakdown:
 
 
->whisper
+whisper
 This is the initial command. Absolutely required.
 
 
