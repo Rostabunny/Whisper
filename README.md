@@ -23,11 +23,11 @@ First, locate to the folder where the audio source is. then, use the following p
 Prompt breakdown:
 
 
-whisper
+whisper:
 This is the initial command. Absolutely required.
 
 
---model
+--model:
 This will determine how much care the model takes on transcription. Note: larger model = longer wait time.
 Options are (in size, small to large):
 tiny.en
@@ -39,10 +39,10 @@ large
 Note: if transcribing a different language, remove the .en ending.
 
 
---language
+--language:
 This is not required for any models with .en endings. When using the large model, the process will be quicker if 'en' or other desired language is written. use prefix.
 
-"filename_here"
+"filename_here":
 this is the name of the file. copy and paste. .mp3, .wav, .mp4, and most other filetypes that include audio are supported.
 
 High quality, slow prompt example:
