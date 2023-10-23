@@ -1,0 +1,39 @@
+Whisper commands
+First, locate to the folder where the audio source is. then, use the following prompt format:
+>whisper --model 'x' --language en "filename_here"
+
+
+Prompt breakdown:
+
+
+>whisper
+This is the initial command. Absolutely required.
+
+
+--model
+This will determine how much care the model takes on transcription. Note: larger model = longer wait time.
+Options are (in size, small to large):
+tiny.en
+base.en
+small.en
+medium.en
+large
+
+Note: if transcribing a different language, remove the .en ending.
+
+
+--language
+This is not required for any models with .en endings. When using the large model, the process will be quicker if 'en' or other desired language is written. use prefix.
+
+"filename_here"
+this is the name of the file. copy and paste. .mp3, .wav, .mp4, and most other filetypes that include audio are supported.
+
+High quality, slow prompt example:
+whisper --model large --language en "20220417_121248.mp4"
+
+Low quality, fast prompt example:
+whisper --model tiny.en "20220417_121248.mp4"
+
+Standard quality, medium speed prompt example:
+whisper --model small --language english "20220417_121248.mp4"
+
